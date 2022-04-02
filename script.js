@@ -1,7 +1,11 @@
 // define function called canYouDrink
 function canYouDrink () {
-// define age variable and sends a prompt with a question to the user. 
-    var age = prompt("What is your age?");
+// do while loop will keep prompt user to enter their age.
+    do {
+// define age variable and sends a prompt with a question to the user.
+        var age = prompt("What is your age?");
+//  user will keep being prompted until a number is entered and makes this conditional true.
+    } while (Number.isNaN(parseInt(age)));   
 // if statement to check if the users age is 21.
     if (Number(age) === 21){
 // this alert will give a response to the user telling them that they're now eligible to drink.
